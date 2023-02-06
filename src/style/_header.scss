@@ -1,0 +1,36 @@
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav__items {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.nav__link {
+  // color: #b4009e;
+  color: var(--secondary-color);
+  transition: color 0.3s;
+}
+.nav__link:hover {
+  // color: #5c2d91;
+  color: #b4009e;
+}
+
+.icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.icon-sun {
+  display: none;
+}

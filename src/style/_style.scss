@@ -1,4 +1,41 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+[class*='__container'] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
