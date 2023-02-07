@@ -6,31 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <title>Portfolio</title>
-    <body class="light">
-      <header class="header">
-        <div class="header__container">
-          <div class="header__inner">
-            <img
-              class="logo nav__logo"
-              src="assets/img/header/logo.svg"
-              alt="logo"
-            />
-            <nav class="nav header__nav">
-              <ul class="nav__items">
-                <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Skills</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="#">Works</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <img class="icon" src="assets/img/header/moon.svg" alt="moon" />
-            <img class="icon-sun" src="assets/img/header/sun.svg" alt="sun" />
-          </div>
+  </head>
+  <body class="light">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__inner">
+          <img
+            class="logo header__logo"
+            src="assets/img/header/logo.svg"
+            alt="logo"
+          />
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Works</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <img class="icon" src="assets/img/header/moon.svg" alt="moon" />
+          <img class="icon-sun" src="assets/img/header/sun.svg" alt="sun" />
+          <button
+            class="menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu__list"
+          >
+            <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+              <use
+                class="menu__icon-menu"
+                href="assets/img/sprite/sprite.svg#menu"
+              ></use>
+              <use
+                class="menu__icon-cross"
+                href="assets/img/sprite/sprite.svg#cross"
+              ></use>
+            </svg>
+          </button>
         </div>
-      </header>
-    </body>
-  </html>
+      </div>
+    </header>
+  </body>
+</html>
