@@ -53,10 +53,12 @@
 }
 
 .menu__link {
+  position: relative;
   color: var(--secondary-color);
   margin-right: 1.875rem;
   line-height: 1.5;
   transition: color 0.3s;
+  @include f500;
   @include sm {
     display: block;
     font-size: 1.875rem;
@@ -64,6 +66,15 @@
   }
   &:hover {
     color: var(--purple-color);
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0.1rem;
+      content: '';
+      background: var(--purple-color);
+    }
   }
 }
 

@@ -6,6 +6,7 @@
 }
 
 .home__title {
+  @include f600;
   font-size: 2.75rem;
 }
 
@@ -15,6 +16,7 @@
 
 .home__link {
   margin-bottom: 1rem;
+  @include f500;
 }
 
 .home__img {
@@ -26,23 +28,27 @@
 }
 
 .home__link {
-  display: inline-block;
-  background-color: var(--purple-color);
-  color: var(----secondary-color);
-  padding: 0.75rem 2.5rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  transition: 0.3s;
-}
-
-.home__link:hover {
-  opacity: 0.8;
+  display: block;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  width: 15rem;
+  padding: 1rem 0;
+  text-align: center;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: var(--purple-color);
+  }
 }
 
 .home__social {
   width: 3.125rem;
 }
 
-.home__social-icon:hover {
-  opacity: 0.8;
+.home__social-icon {
+  fill: var(--secondary-color);
+  transition: fill 0.3s;
+  &:hover {
+    fill: var(--purple-color);
+  }
 }

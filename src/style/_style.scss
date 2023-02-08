@@ -1,6 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  @include f400;
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -18,6 +17,17 @@ body {
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 0.938rem;
+}
+
+.section {
+  margin-bottom: 3.125rem;
+}
+
+.title {
+  display: inline-block;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 2rem;
+  @include f600;
 }
 
 ul,

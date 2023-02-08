@@ -1,0 +1,37 @@
+.about__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.img-about__photo {
+  max-width: 300px;
+  max-height: 400px;
+  margin: 1.25rem auto;
+  transition: 0.5s ease;
+  &:hover {
+    box-shadow: 0 0 0 10px var(--purple-color);
+    transition: 0.5s ease;
+  }
+}
+
+.about__content {
+  max-width: 500px;
+  margin-left: 1.5rem;
+}
+
+.about__decor {
+  text-align: center;
+}
+
+.about__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  @include f500;
+}
+
+.about__text {
+  line-height: 1.5;
+}
