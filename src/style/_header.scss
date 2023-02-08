@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+  margin: 3.125rem 0;
 
   @include sm {
     align-items: flex-start;
@@ -14,7 +14,7 @@
 .menu__button {
   @include sm {
     background-color: transparent;
-    margin-left: 15px;
+    margin-left: 0.938rem;
   }
 }
 
@@ -41,8 +41,8 @@
 .menu__list {
   @include sm {
     display: none;
-    margin-top: 50px;
-    gap: 20px;
+    margin-top: 3.125rem;
+    gap: 1.25rem;
   }
 }
 .menu__list--open {
@@ -54,16 +54,16 @@
 
 .menu__link {
   color: var(--secondary-color);
-  margin-right: 30px;
+  margin-right: 1.875rem;
   line-height: 1.5;
   transition: color 0.3s;
   @include sm {
     display: block;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-right: 0;
   }
   &:hover {
-    color: #b4009e;
+    color: var(--purple-color);
   }
 }
 

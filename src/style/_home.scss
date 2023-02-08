@@ -1,0 +1,48 @@
+.home__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__title {
+  font-size: 2.75rem;
+}
+
+.home__title-color {
+  color: var(--purple-color);
+}
+
+.home__link {
+  margin-bottom: 1rem;
+}
+
+.home__img {
+  width: 37.5rem;
+}
+
+.home__blob {
+  fill: var(--purple-color);
+}
+
+.home__link {
+  display: inline-block;
+  background-color: var(--purple-color);
+  color: var(----secondary-color);
+  padding: 0.75rem 2.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.home__link:hover {
+  opacity: 0.8;
+}
+
+.home__social {
+  width: 3.125rem;
+}
+
+.home__social-icon:hover {
+  opacity: 0.8;
+}
