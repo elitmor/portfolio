@@ -7,7 +7,7 @@
 
 .home__title {
   @include f600;
-  font-size: 2.75rem;
+  font-size: var(--h1-font-size);
 }
 
 .home__title-color {

@@ -22,12 +22,8 @@
   margin-left: 1.5rem;
 }
 
-.about__decor {
-  text-align: center;
-}
-
 .about__subtitle {
-  font-size: 1.5rem;
+  font-size: var(--h3-font-size);
   margin-bottom: 1.5rem;
   @include f500;
 }

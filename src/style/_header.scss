@@ -61,7 +61,7 @@
   @include f500;
   @include sm {
     display: block;
-    font-size: 1.875rem;
+    font-size: var(----normal-font-size);
     margin-right: 0;
   }
   &:hover {
