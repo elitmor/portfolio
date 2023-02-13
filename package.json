@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "dev": "webpack",
-    "prod": "webpack --node-env=production"
+    "prod": "webpack --node-env=works__contention"
   },
   "author": "",
   "license": "ISC",
