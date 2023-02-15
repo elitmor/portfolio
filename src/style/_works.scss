@@ -53,6 +53,7 @@
   width: 250px;
   height: 250px;
   margin: 0.3125rem;
+  transition: background-color 0.3s;
 
   @include sm {
     display: block;
@@ -60,18 +61,7 @@
   }
 
   &:hover {
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.7;
-      background-color: var(--purple-color);
-      border-radius: 0.625rem;
-      cursor: pointer;
-      content: '';
-    }
+    background-color: var(--purple-color);
   }
 }
 
@@ -81,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.625rem;
+  border-radius: 2rem;
   object-fit: cover;
 }
 

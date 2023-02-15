@@ -40,15 +40,3 @@
     background-color: var(--purple-color);
   }
 }
-
-.home__social {
-  width: 3.125rem;
-}
-
-.home__social-icon {
-  fill: var(--secondary-color);
-  transition: fill 0.3s;
-  &:hover {
-    fill: var(--purple-color);
-  }
-}
