@@ -83,3 +83,22 @@ a {
     fill: var(--purple-color);
   }
 }
+
+.btn-up {
+  position: fixed;
+  right: 1rem;
+  bottom: 15rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 12px #845bb3;
+  display: inline-flex;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: bottom 0.3s transform 0.3s;
+  &:hover {
+    transform: translateY(-0.25rem);
+  }
+}
+
+.btn-up_hide {
+  display: none;
+}
