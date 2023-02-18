@@ -1,54 +1,28 @@
 @import 'mixins';
 
-.header__inner {
+.header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 3.125rem 0;
-
-  @include sm {
-    align-items: flex-start;
-  }
 }
 
-.menu__button {
-  @include sm {
-    background-color: transparent;
-    margin-left: 0.938rem;
-  }
+.header__top {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu__button--open .menu__icon-cross,
-.menu__icon,
-.menu__icon-menu {
-  @include sm {
-    display: block;
-  }
-}
-.menu__button--open .menu__icon-menu,
-.menu__icon-cross {
-  @include sm {
-    display: none;
-  }
+.top-header__img {
+  width: 50px;
 }
 
-.header__menu {
-  @include sm {
-    width: 100%;
-  }
-}
-
-.menu__list {
-  @include sm {
-    display: none;
-    margin-top: 3.125rem;
-    gap: 1.25rem;
-  }
-}
-.menu__list--open {
-  @include sm {
-    display: grid;
-    text-align: center;
+.menu__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 1.25rem;
+    @include sm {
+      margin-right: 0;
+    }
   }
 }
 
@@ -78,15 +52,47 @@
   }
 }
 
-@media (min-width: 577px) {
+.menu__button {
+  background-color: transparent;
+  border: none;
+}
+
+// burger
+
+@media (width <= 36em) {
+  .header__menu {
+    display: block;
+  }
+}
+
+@media (width >= 36em) {
   .menu__button {
     display: none;
   }
 }
 
-@media (min-width: 577px) {
-  .menu__list {
-    display: grid;
-    grid-auto-flow: column;
+@media (width <= 36em) {
+  .menu__icon-menu,
+  .menu__button--open .menu__icon-cross {
+    display: block;
+  }
+
+  .menu__icon-cross,
+  .menu__button--open .menu__icon-menu {
+    display: none;
   }
 }
+
+@media (width <= 36em) {
+  .menu__list {
+    display: none;
+  }
+
+  .menu__list--open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+// burger

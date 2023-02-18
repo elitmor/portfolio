@@ -10,48 +10,50 @@
   <body class="light">
     <header class="header">
       <div class="header__container">
-        <div class="header__inner">
-          <img
-            class="logo header__logo"
-            src="assets/img/header/logo.svg"
-            alt="logo"
-          />
-          <nav class="menu header__menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#home">Home</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#about">About</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#skills">Skills</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#works">Works</a>
-              </li>
-            </ul>
-          </nav>
-          <img class="icon" src="assets/img/header/moon.svg" alt="moon" />
-          <img class="icon-sun" src="assets/img/header/sun.svg" alt="sun" />
-          <button
-            class="menu__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="menu__list"
-          >
-            <svg class="menu__icon" aria-hidden="true" width="32" height="32">
-              <use
-                class="menu__icon-menu"
-                href="assets/img/sprite/sprite.svg#menu"
-              ></use>
-              <use
-                class="menu__icon-cross"
-                href="assets/img/sprite/sprite.svg#cross"
-              ></use>
-            </svg>
-          </button>
-        </div>
+        <nav class="menu header__menu">
+          <div class="header__top top-header">
+            <a href="#" class="logo top-header__link" aria-label="logo">
+              <img
+                class="top-header__img"
+                src="assets/img/header/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <img class="icon" src="assets/img/header/moon.svg" alt="moon" />
+            <img class="icon-sun" src="assets/img/header/sun.svg" alt="sun" />
+            <button
+              class="menu__button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu__list"
+            >
+              <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+                <use
+                  class="menu__icon-menu"
+                  href="assets/img/sprite/sprite.svg#menu"
+                ></use>
+                <use
+                  class="menu__icon-cross"
+                  href="assets/img/sprite/sprite.svg#cross"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#home">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#works">Works</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -509,7 +511,7 @@
       </div>
     </footer>
 
-    <button href="#" class="btn-up btn-up_hide">
+    <button class="btn-up btn-up_hide">
       <svg
         width="60px"
         height="60px"
@@ -525,6 +527,6 @@
           stroke-linejoin="round"
         />
       </svg>
-    </и>
+    </button>
   </body>
 </html>

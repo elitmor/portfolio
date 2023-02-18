@@ -14,31 +14,31 @@
 }
 
 @mixin sm {
-  @media (max-width: 576px) {
+  @media screen and (max-width: 36em) {
     @content;
   }
 }
 
 @mixin md {
-  @media (max-width: 768px) {
+  @media screen and (max-width: 48em) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (max-width: 992px) {
+  @media screen and (max-width: 62em) {
     @content;
   }
 }
 
 @mixin xl {
-  @media (max-width: 1200px) {
+  @media screen and (max-width: 75em) {
     @content;
   }
 }
 
 @mixin xxl {
-  @media (max-width: 1440px) {
+  @media screen and (max-width: 90em) {
     @content;
   }
 }
