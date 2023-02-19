@@ -1,45 +1,96 @@
 .home__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
 
-.home__title {
-  @include f600;
-  font-size: var(--h1-font-size);
-  @include sm {
-    margin: 0;
+  @include lg {
+    flex-wrap: wrap;
   }
 }
 
-.home__title-color {
+.home__info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin-right: 0.9375rem;
+  @include lg {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.home__title span {
   color: var(--purple-color);
 }
 
-.home__link {
+.home__subtitle {
   margin-bottom: 1rem;
-  @include f500;
 }
 
-.home__img {
-  width: 37.5rem;
+.home__text {
+  margin-bottom: 1rem;
 }
 
-.home__blob {
-  fill: var(--purple-color);
-}
-
-.home__link {
-  display: block;
-  background-color: var(--purple-color);
-  color: var(--primary-color);
-  border-radius: 0.625rem;
-  width: 15rem;
-  padding: 1rem 0;
-  text-align: center;
-  transition: background-color 0.3s;
+.info-home__link {
+  box-shadow: inset 0 0 0 0 var(--purple-color);
+  color: var(--purple-color);
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 1rem;
   &:hover {
-    background-color: var(--purple-color-alt);
+    color: var(--first-color);
+    box-shadow: inset 200px 0 0 0 var(--purple-color);
+  }
+}
+
+.home__right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+  @include lg {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.home__right {
+  &::after {
+    position: absolute;
+    right: 20px;
+    bottom: -40px;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid var(--purple-color);
+    border-right: 10px solid var(--purple-color);
+    content: '';
+
+    @include lg {
+      right: 0;
+    }
+  }
+  &::before {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid var(--purple-color);
+    border-left: 10px solid var(--purple-color);
+    content: '';
+
+    @include lg {
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.right-home__img {
+  max-width: 400px;
+
+  @include lg {
+    max-width: 300px;
   }
 }

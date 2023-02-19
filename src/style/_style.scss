@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  vertical-align: top;
+}
+
 .logo {
   width: 3.125rem;
 }
@@ -47,10 +51,6 @@ a {
 .icon {
   width: 1.875rem;
   cursor: pointer;
-}
-
-.icon-sun {
-  display: none;
 }
 
 .decor {
