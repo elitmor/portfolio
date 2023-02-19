@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body class="light">
@@ -57,7 +61,7 @@
               </svg>
             </button>
           </div>
-          <ul class="menu__list">
+          <ul class="menu__list" id="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#home">Home</a>
             </li>
@@ -114,12 +118,82 @@
             <h2 class="about__title title">About</h2>
           </div>
           <div class="about__inner">
-            <div class="about__img img-about">
-              <img
-                class="img-about__photo"
-                src="assets/img/about/about.jpg"
-                alt="photo"
-              />
+            <div class="social about__social social-about">
+              <ul class="social__items">
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--gmail social--tooltip"
+                    href="mailto:elitmor@gmail.com"
+                    aria-label="Gmail"
+                    target="_blank"
+                  >
+                    <svg class="social__img">
+                      <use xlink:href="#icon--gmail"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--telegram social--tooltip"
+                    href="https://t.me/elitmor"
+                    aria-label="Telegram"
+                    target="_blank"
+                  >
+                    <svg class="social__img">
+                      <use xlink:href="#icon--telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--github social--tooltip"
+                    href="https://github.com/elitmor"
+                    aria-label="Github"
+                    target="_blank"
+                  >
+                    <svg class="social__img">
+                      <use xlink:href="#icon--github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--linkedin social--tooltip"
+                    href="http://www.linkedin.com/in/elitmor"
+                    aria-label="Linkedin"
+                    target="_blank"
+                  >
+                    <svg class="social__img">
+                      <use xlink:href="#icon--linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <svg style="display: none">
+                <symbol id="icon--gmail" viewBox="0 0 36 36">
+                  <path
+                    d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z"
+                  ></path>
+                </symbol>
+                <symbol id="icon--telegram" viewBox="0 0 24 24">
+                  <path
+                    d="M16.114,9.291c.552-.552,1.1-1.84-1.2-.276-3.268,2.255-6.489,4.372-6.489,4.372a2.7,2.7,0,0,1-2.117.046c-1.38-.414-2.991-.966-2.991-.966s-1.1-.691.783-1.427c0,0,7.961-3.267,10.722-4.418,1.058-.46,4.647-1.932,4.647-1.932s1.657-.645,1.519.92c-.046.644-.414,2.9-.782,5.338-.553,3.451-1.151,7.225-1.151,7.225s-.092,1.058-.874,1.242a3.787,3.787,0,0,1-2.3-.828c-.184-.138-3.451-2.209-4.648-3.221a.872.872,0,0,1,.046-1.473C12.939,12.375,14.918,10.488,16.114,9.291Z"
+                  />
+                </symbol>
+                <symbol id="icon--github" viewBox="0 0 24 24">
+                  <path
+                    d="M18.36 9.28c0.48-1.72-0.24-3.6-0.28-3.72-0.12-0.28-0.4-0.52-0.72-0.52-0.080 0-1.92-0.16-3.76 1.24-1.44-0.28-3.080-0.36-3.16-0.36-0.040 0-0.040 0-0.080 0-0.080 0-1.72 0.080-3.16 0.36-1.84-1.4-3.68-1.24-3.76-1.24-0.32 0.040-0.6 0.24-0.72 0.52-0.040 0.080-0.8 2-0.28 3.72-0.92 1.28-1.64 2.96-1 5.96 0.6 2.72 2.84 4.24 5.16 4.76-0.2 0.56-0.28 1.24-0.36 1.96-0.96 0.040-1.56-0.52-2.4-1.4-0.72-0.76-1.52-1.64-2.84-1.92-0.44-0.12-0.88 0.16-1 0.64-0.080 0.48 0.2 0.92 0.68 1 0.76 0.16 1.28 0.72 1.92 1.4 0.84 0.88 1.8 1.96 3.52 1.96 0 0 0.040 0 0.040 0 0 0.92 0.080 1.8 0.12 2.52 0.040 0.48 0.44 0.8 0.92 0.76s0.8-0.44 0.76-0.92c-0.24-2.72-0.040-5.6 0.4-6 0.32-0.2 0.52-0.56 0.4-0.96-0.080-0.36-0.4-0.64-0.8-0.64-0.36 0-4.12-0.2-4.84-3.52-0.6-2.72 0.16-3.92 0.96-4.88 0.2-0.24 0.24-0.6 0.12-0.92-0.32-0.68-0.2-1.64-0.040-2.28 0.56 0.080 1.4 0.32 2.28 1.080 0.2 0.2 0.48 0.24 0.76 0.2 1.24-0.32 2.92-0.4 3.2-0.4 0.24 0 1.96 0.080 3.2 0.4 0.28 0.080 0.56 0 0.76-0.2 0.88-0.76 1.76-1 2.28-1.080 0.16 0.6 0.28 1.56-0.040 2.28-0.12 0.28-0.080 0.64 0.12 0.92 0.8 0.96 1.52 2.16 0.96 4.88-0.72 3.32-4.48 3.52-4.92 3.56-0.4 0-0.72 0.28-0.8 0.64s0.080 0.76 0.4 0.96c0.48 0.4 0.68 3.24 0.44 6-0.040 0.48 0.32 0.88 0.76 0.92 0.040 0 0.040 0 0.080 0 0.44 0 0.8-0.32 0.84-0.76 0.16-1.76 0.28-4.48-0.28-6.2 2.32-0.48 4.56-2.040 5.16-4.76 0.64-3-0.040-4.68-1-5.96z"
+                  ></path>
+                </symbol>
+                <symbol id="icon--linkedin" viewBox="0 0 24 24">
+                  <path
+                    d="M0.92 11.32c-0.48 0-0.84 0.36-0.84 0.84v11.76c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-11.76c0-0.48-0.36-0.84-0.84-0.84zM1.84 8.16c0 0.508-0.412 0.92-0.92 0.92s-0.92-0.412-0.92-0.92c0-0.508 0.412-0.92 0.92-0.92s0.92 0.412 0.92 0.92zM15.28 11.68c-1.8-0.96-4.44-0.28-8.040 2v-1.52c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v11.76c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-8.24c4.52-3.12 6.48-2.92 7.24-2.52 1.040 0.56 1.040 2.080 1.040 2.080v8.68c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-8.64c0-0.12 0-2.56-1.92-3.6z"
+                  ></path>
+                </symbol>
+              </svg>
+              <a class="about__link" download="" href="assets/pdf/Ansel-Cv.pdf"
+                >Download CV</a
+              >
             </div>
             <div class="about__content">
               <h3 class="about__subtitle">I'am Elitmor</h3>

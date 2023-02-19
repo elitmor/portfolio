@@ -1,0 +1,81 @@
+.social__items {
+  display: flex;
+}
+
+.social__item {
+  width: 100%;
+}
+
+.social__link {
+  position: relative;
+  color: var(--primary-color);
+  outline: none;
+  &:focus {
+    color: var(--purple-color);
+  }
+}
+
+.social__img {
+  width: 36px;
+  height: 36px;
+  fill: currentColor;
+  transition: 0.3s;
+}
+
+.social__link--gmail:hover {
+  color: #df4538;
+}
+.social__link--telegram:hover {
+  color: #2481cc;
+}
+.social__link--github:hover {
+  color: #758ca3;
+}
+.social__link--linkedin:hover {
+  color: #0a66c2;
+}
+
+.social__link--gmail:hover::after {
+  background: #df4538;
+}
+.social__link--telegram:hover::after {
+  background: #2481cc;
+}
+.social__link--github:hover::after {
+  background: #758ca3;
+}
+.social__link--linkedin:hover::after {
+  background: #0a66c2;
+}
+
+.social--tooltip::before,
+.social--tooltip::after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -5rem);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.social--tooltip::before {
+  content: '';
+  bottom: calc(100% + 5rem);
+  border: solid 5px transparent;
+  border-top-color: currentColor;
+}
+
+.social--tooltip::after {
+  content: attr(aria-label);
+  bottom: calc(100% + 1rem);
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+  color: var(--secondary-color);
+  border-radius: 3px;
+}
+
+.social--tooltip:hover::before,
+.social--tooltip:hover::after {
+  opacity: 1;
+  transform: translate(-50%);
+}
