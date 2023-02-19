@@ -10,6 +10,7 @@
 .header__top {
   display: flex;
   justify-content: space-between;
+  flex: 1 1 auto;
 }
 
 .top-header__img {
@@ -96,3 +97,53 @@
 }
 
 // burger
+
+// switch-theme
+
+.theme-toggle {
+  position: relative;
+  display: block;
+  font-size: 2em;
+  border-radius: 100vh;
+  background: none;
+  border: none;
+  opacity: 0.7;
+  margin-right: 3rem;
+  cursor: pointer;
+
+  @include sm {
+    margin-right: 0;
+  }
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background: hsl(268, 37%, 53%, 0.5);
+  opacity: 1;
+  outline: none;
+}
+
+.theme-toggle svg {
+  display: block;
+  fill: #845bb3;
+}
+.theme-toggle circle {
+  transform: none;
+  transform-origin: 50% 50%;
+  transition: transform 0.5s;
+}
+.light-theme #theme-toggle circle {
+  transform: translateX(-72px) scaleY(1.143);
+}
+.theme-toggle .ray-ring {
+  transform-origin: center;
+  transition: transform 0.6s;
+}
+.light-theme .ray-ring {
+  transform: rotate(0);
+}
+.dark-theme .ray-ring {
+  transform: rotate(0.5turn);
+}
+
+// switch-theme

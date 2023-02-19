@@ -1,26 +1,48 @@
-const icon = document.querySelector('.icon');
+const themeToggle = document.querySelector('#theme-toggle');
+const modePref = localStorage.getItem('modePref');
 
-if (localStorage.getItem('theme') === 'null') {
-  localStorage.setItem('theme', 'light');
-}
+themeToggle.addEventListener('click', () => {
+  document.body.classList.contains('light-theme')
+    ? enableDarkMode()
+    : enableLightMode();
+});
 
-const localData = localStorage.getItem('theme');
+themeToggle.addEventListener('mouseleave', () => {
+  themeToggle.blur();
+});
 
-if (localData === 'light') {
-  icon.src = 'assets/moon.svg';
-  document.body.classList.remove('dark-theme');
-} else if (localData === 'dark') {
-  icon.src = 'assets/sun.svg';
-  document.body.classList.add('dark-theme');
-}
-
-icon.addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');
-  if (document.body.classList.contains('dark-theme')) {
-    icon.src = 'assets/sun.svg';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    icon.src = 'assets/moon.svg';
-    localStorage.setItem('theme', 'light');
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    themeToggle.blur();
   }
 });
+
+const enableDarkMode = () => {
+  document.body.classList.remove('light-theme');
+  document.body.classList.add('dark-theme');
+  themeToggle.setAttribute('aria-label', 'Switch to the light theme');
+  localStorage.setItem('modePref', 'dark');
+};
+
+const enableLightMode = () => {
+  document.body.classList.remove('dark-theme');
+  document.body.classList.add('light-theme');
+  themeToggle.setAttribute('aria-label', 'Switch to the dark theme');
+  if (localStorage.getItem('modePref') === 'dark') {
+    localStorage.setItem('modePref', 'light');
+  }
+};
+
+const setThemePreference = () => {
+  if (modePref === 'dark') {
+    enableDarkMode();
+  } else if (modePref === 'light') {
+    enableLightMode();
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    enableDarkMode();
+  } else {
+    enableLightMode();
+  }
+};
+
+document.onload = setThemePreference();
