@@ -8,6 +8,9 @@
 .home__title {
   @include f600;
   font-size: var(--h1-font-size);
+  @include sm {
+    margin: 0;
+  }
 }
 
 .home__title-color {
@@ -29,7 +32,7 @@
 
 .home__link {
   display: block;
-  background-color: var(--secondary-color);
+  background-color: var(--purple-color);
   color: var(--primary-color);
   border-radius: 0.625rem;
   width: 15rem;
@@ -37,6 +40,6 @@
   text-align: center;
   transition: background-color 0.3s;
   &:hover {
-    background-color: var(--purple-color);
+    background-color: var(--purple-color-alt);
   }
 }

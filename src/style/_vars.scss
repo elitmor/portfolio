@@ -1,17 +1,59 @@
-:root {
-  --primary-color: #e5eaf5;
-  --secondary-color: #000;
-  --purple-color: #845bb3;
-  --pink-color: #db83d0;
+// :root {
+//   --primary-color: #e5eaf5;
+//   --secondary-color: #000;
+//   --purple-color: #845bb3;
+//   --pink-color: #db83d0;
 
-  --h1-font-size: 3.375rem;
-  --h2-font-size: 2.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
+//   --h1-font-size: 3.375rem;
+//   --h2-font-size: 2.25rem;
+//   --h3-font-size: 1.125rem;
+//   --normal-font-size: 1rem;
+//   --small-font-size: 0.875rem;
+// }
+
+// .dark-theme {
+//   --primary-color: #000;
+//   --secondary-color: #fff;
+// }
+
+:root {
+  --first-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 0%);
+  --purple-color: hsl(268, 37%, 53%);
+  --purple-color-alt: hsl(268, 22%, 43%);
+  --pink-color: hsl(308, 55%, 69%);
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  .light-theme {
+    color: var(--secondary-color);
+    background-color: var(--first-color);
+  }
+  .dark-theme {
+    color: var(--first-color);
+    background-color: var(--secondary-color);
+  }
 }
 
-.dark-theme {
-  --primary-color: #000;
-  --secondary-color: #fff;
+@media screen and (min-width: 64em) {
+  :root {
+    --biggest-font-size: 5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
