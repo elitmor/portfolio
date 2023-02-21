@@ -1,7 +1,7 @@
 body {
   @include f400;
   color: var(--secondary-color);
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
 }
 
 *,
@@ -85,7 +85,7 @@ img {
   right: 1rem;
   bottom: 15rem;
   background-color: var(--secondary-color);
-  box-shadow: 0 4px 12px #845bb3;
+  box-shadow: 0 4px 12px var(--purple-color);
   display: inline-flex;
   border-radius: 0.25rem;
   cursor: pointer;

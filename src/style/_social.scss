@@ -23,29 +23,29 @@
 }
 
 .social__link--gmail:hover {
-  color: #df4538;
+  color: hsl(5, 72%, 55%);
 }
 .social__link--telegram:hover {
-  color: #2481cc;
+  color: hsl(207, 70%, 47%);
 }
 .social__link--github:hover {
-  color: #758ca3;
+  color: hsl(210, 20%, 55%);
 }
 .social__link--linkedin:hover {
-  color: #0a66c2;
+  color: hsl(210, 90%, 40%);
 }
 
 .social__link--gmail:hover::after {
-  background: #df4538;
+  background: hsl(5, 72%, 55%);
 }
 .social__link--telegram:hover::after {
-  background: #2481cc;
+  background: hsl(207, 70%, 47%);
 }
 .social__link--github:hover::after {
-  background: #758ca3;
+  background: hsl(210, 20%, 55%);
 }
 .social__link--linkedin:hover::after {
-  background: #0a66c2;
+  background: hsl(210, 90%, 40%);
 }
 
 .social--tooltip::before,
