@@ -24,7 +24,11 @@
   background: transparent;
   color: var(--primary-color);
   border: none;
+  transition: all 0.3s;
   cursor: pointer;
+  &:hover {
+    background-color: var(--purple-color);
+  }
   @include sm {
     min-width: 300px;
   }
@@ -47,6 +51,17 @@
   @include sm {
     grid-template-columns: repeat(1, auto);
     text-align: center;
+  }
+}
+
+.content-works__item a {
+  outline: none;
+
+  &:focus {
+    filter: brightness(0.7);
+  }
+  &:hover {
+    filter: brightness(0.7);
   }
 }
 

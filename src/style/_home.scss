@@ -90,6 +90,11 @@
 
 .right-home__img {
   max-width: 400px;
+  transition: filter 0.3s;
+  filter: drop-shadow(0 0 0 var(--purple-color));
+  &:hover {
+    filter: drop-shadow(10px 10px 10px var(--purple-color));
+  }
 
   @include lg {
     max-width: 300px;

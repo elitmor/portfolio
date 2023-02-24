@@ -1,5 +1,12 @@
 @import 'mixins';
 
+.header {
+  margin-bottom: 10rem;
+  @include sm {
+    margin-bottom: 0rem;
+  }
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
