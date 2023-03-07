@@ -36,6 +36,7 @@
 
 .label-works__item.active {
   background-color: var(--purple-color);
+  color: var(--yellow-color);
   opacity: 1;
 }
 
@@ -68,6 +69,7 @@
 .content-works__img {
   border-radius: 1rem;
   width: 300px;
+  height: 300px;
 }
 
 .content-works__item.hide {

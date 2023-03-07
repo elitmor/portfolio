@@ -13,4 +13,5 @@ const linkAction = () => {
   menuList.classList.remove('menu__list--open');
   menuButton.classList.toggle('menu__button--open');
 };
+
 navLink.forEach((n) => n.addEventListener('click', linkAction));

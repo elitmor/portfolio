@@ -19,7 +19,7 @@
           <div class="header__top top-header">
             <a class="logo top-header__link hidden" href="#" aria-label="logo">
               <img
-                class="top-header__img"
+                class="top-header__logo"
                 src="assets/img/logo.svg"
                 alt="logo"
               />
@@ -88,9 +88,9 @@
               <h1 class="home__title hidden">
                 Hello, my name is <span>Elitmor</span>
               </h1>
-              <h3 class="home__subtitle">
+              <h2 class="home__subtitle">
                 I' m a <span>front-end web developer</span>
-              </h3>
+              </h2>
               <p class="home__text">
                 As a front-end developer, I have a passion for creating stunning
                 and interactive websites and web applications that engage users
@@ -108,11 +108,21 @@
             </div>
             <div class="home__right right-home">
               <a href="#about">
-                <img
-                  class="right-home__img"
-                  src="assets/img/home/perfil.png"
-                  alt="main photo"
-                />
+                <picture>
+                  <source
+                    media="(max-width:576)"
+                    srcset="assets/img/home/perfil-300.png"
+                  />
+                  <source
+                    media="(max-width:1440)"
+                    srcset="assets/img/home/perfil-400.png"
+                  />
+                  <img
+                    class="right-home__img"
+                    src="assets/img/home/perfil.png"
+                    alt="main photo"
+                  />
+                </picture>
               </a>
             </div>
           </div>
@@ -465,74 +475,74 @@
             </ul>
             <div class="works__content content-works">
               <div class="content-works__item" data-item="mobile">
-                <a href="https://github.com/">
+                <a class="content-works__link" href="https://github.com/">
                   <img
                     class="content-works__img"
                     src="assets/img/works/mobile1.jpg"
-                    alt=""
+                    alt="mobile1"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="camera">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/camera1.jpg"
-                    alt=""
+                    alt="camera1"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="watch">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/headphone1.jpg"
-                    alt=""
+                    alt="headphone1"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="mobile">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/mobile2.jpg"
-                    alt=""
+                    alt="mobile2"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="camera">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/camera2.jpg"
-                    alt=""
+                    alt="camera2"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="watch">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/watch2.jpg"
-                    alt=""
+                    alt="watch2"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="shoe">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/shoe2.jpg"
-                    alt=""
+                    alt="shoe2"
                   />
                 </a>
               </div>
               <div class="content-works__item" data-item="headphone">
-                <a href="#">
+                <a class="content-works__link" href="#">
                   <img
                     class="content-works__img"
                     src="assets/img/works/headphone2.jpg"
-                    alt=""
+                    alt="headphone2"
                   />
                 </a>
               </div>
@@ -545,9 +555,13 @@
       <div class="footer__container">
         <div class="footer__inner">
           <div class="footer__info">
-            <a class="logo footer__logo hidden" href="#" aria-label="logo">
+            <a
+              class="logo footer__logo logo-footer hidden"
+              href="#"
+              aria-label="logo"
+            >
               <img
-                class="top-header__img"
+                class="logo-footer__img"
                 src="assets/img/logo.svg"
                 alt="logo"
               />
@@ -632,7 +646,7 @@
       </div>
     </footer>
 
-    <button class="btn-up btn-up_hide">
+    <button class="btn-up btn-up_hide" aria-label="btn up">
       <svg
         width="60px"
         height="60px"

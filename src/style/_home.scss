@@ -35,7 +35,7 @@
 .info-home__link {
   box-shadow: inset 0 0 0 0 var(--purple-color);
   color: var(--purple-color);
-  padding: 0 0.25rem;
+  padding: 0.5rem;
   margin: 0 -0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin-bottom: 1rem;
@@ -57,20 +57,6 @@
 }
 
 .home__right {
-  &::after {
-    position: absolute;
-    right: 20px;
-    bottom: -40px;
-    width: 80px;
-    height: 80px;
-    border-bottom: 5px solid var(--purple-color);
-    border-right: 5px solid var(--purple-color);
-    content: '';
-
-    @include lg {
-      right: 0;
-    }
-  }
   &::before {
     position: absolute;
     left: -20px;
@@ -89,14 +75,21 @@
 }
 
 .right-home__img {
-  max-width: 400px;
+  width: 600px;
+  height: 800px;
   transition: filter 0.3s;
   filter: drop-shadow(0 0 0 var(--purple-color));
   &:hover {
     filter: drop-shadow(10px 10px 10px var(--purple-color));
   }
 
-  @include lg {
-    max-width: 300px;
+  @include xxl {
+    width: 400px;
+    height: 533px;
+  }
+
+  @include sm {
+    width: 300px;
+    height: 400px;
   }
 }
