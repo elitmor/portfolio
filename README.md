@@ -1,13 +1,19 @@
-### Webpack
+### Portfolio
 
-#### Запустить сервер для разработки
+#### Start development server
 
-`yarn start`
+```
+yarn start
+```
 
-#### Сборка проект без оптимизации
+#### Build project without optimization
 
-`yarn dev`
+```
+yarn dev
+```
 
-#### Сборка проект с оптимизацией
+#### Build project with optimization
 
-`yarn prod`
+```
+yarn prod
+```
